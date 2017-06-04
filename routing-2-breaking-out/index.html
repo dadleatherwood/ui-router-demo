@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Routing 2</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+   
+      <!--Bootstrap your app here-->
+      <div ng-app="routing2App">
+         <nav>
+            <ul>
+               <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+               <li><a ui-sref="todo" ui-sref-active="active">Todo</a></li>
+               <li><a ui-sref="hobbies" ui-sref-active="active">Hobbies</a></li>
+               <li><a ui-sref="skills" ui-sref-active="active">Skills</a></li>
+            </ul>
+         </nav>
+         <ui-view></ui-view>
+      </div>
+
+      <!--Angular and UI-Router Scripts-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+
+      <!--Your .js Files-->
+      <script src="app.js"></script>
+      <script src="controllers/hobbiesController.js"></script>
+      <script src="controllers/skillsController.js"></script>
+      <script src="services/skillsService.js"></script>
+   </body>
+</html>
