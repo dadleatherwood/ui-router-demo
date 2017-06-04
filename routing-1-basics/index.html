@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Simple Routing</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+      <h1>Basic Routing</h1>
+      <!--1.3 Uncomment the div with the ng-app and its closing tag to bootstrap the app.-->
+      <div ng-app="routingApp">
+
+         <!--3.1 Uncomment the nav below to create navigation for your states-->
+         <nav>
+            <ul>
+               <li>
+                  <a ui-sref="home">Home</a>
+               </li>
+               <li>
+                  <a ui-sref="about">About</a>
+               </li>
+               <li>
+                  <a ui-sref="redirect">Redirect</a>
+               </li>
+            </ul>
+         </nav>
+
+         <!--2.4 Uncomment the ui-view tag to see your states rendered in the viewport-->
+         <ui-view></ui-view>
+
+      </div>
+
+
+      <!--1.1: Uncomment the script files below-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+      <script src="app.js"></script>
+
+   </body>
+</html>
