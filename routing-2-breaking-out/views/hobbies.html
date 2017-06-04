@@ -1,0 +1,10 @@
+<h1>Hobbies</h1>
+<ul>
+   <li>???</li>
+   <li>{{soleHobby}}</li>
+   <li ng-repeat="hobby in hobbies">{{hobby}}</li>
+</ul>
+
+<form ng-submit="addHobby(newHobby)">
+   <input type="text" ng-model="newHobby" placeholder="Add a new hobby">
+</form>

@@ -1,0 +1,18 @@
+<h1>Skills</h1>
+<form ng-submit="addSkill(newSkill)">
+   <input type="text" ng-model="newSkill.name" placeholder="Enter skill name">
+   <input type="text" ng-model="newSkill.level" placeholder="Enter skill level">
+   <input type="submit" value="Add Skill">
+</form>
+<table>
+   <thead>
+      <th>Skill</th>
+      <th>Level</th>
+   </thead>
+   <tbody>
+      <tr ng-repeat="skill in skills">
+         <td>{{skill.name}}</td>
+         <td>{{skill.level}}</td>
+      </tr>
+   </tbody>
+</table>
