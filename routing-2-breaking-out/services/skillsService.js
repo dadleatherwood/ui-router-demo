@@ -1,11 +1,7 @@
 angular.module('routing2App').service('skillsService', function() {
-   this.getSkills = function() {
-      return skills;
-   }
 
-   this.addSkill = function(skill) {
-      skills.push(skill)
-   }
+
+
 })
 
 var skills = [

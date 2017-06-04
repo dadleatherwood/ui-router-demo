@@ -9,17 +9,19 @@
    <body>
    
       <!--Bootstrap your app here-->
-      <div ng-app="routing2App">
+
+         <!--Make the navigation work-->
          <nav>
             <ul>
-               <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
-               <li><a ui-sref="todo" ui-sref-active="active">Todo</a></li>
-               <li><a ui-sref="hobbies" ui-sref-active="active">Hobbies</a></li>
-               <li><a ui-sref="skills" ui-sref-active="active">Skills</a></li>
+               <li><a>Home</a></li>
+               <li><a>Todo</a></li>
+               <li><a>Hobbies</a></li>
+               <li><a>Skills</a></li>
             </ul>
          </nav>
-         <ui-view></ui-view>
-      </div>
+
+         <!--Create a viewport-->
+
 
       <!--Angular and UI-Router Scripts-->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
