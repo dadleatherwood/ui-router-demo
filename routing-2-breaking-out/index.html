@@ -7,22 +7,25 @@
       <link href="style.css" rel="stylesheet">
    </head>
    <body>
-   
+
       <!--Bootstrap your app here-->
+      <div ng-app="routing2App">
+
+
 
          <!--Make the navigation work-->
          <nav>
             <ul>
-               <li><a>Home</a></li>
-               <li><a>Todo</a></li>
-               <li><a>Hobbies</a></li>
-               <li><a>Skills</a></li>
+               <li><a ui-sref="home">Home</a></li>
+               <li><a ui-sref="todo">Todo</a></li>
+               <li><a ui-sref="hobbies">Hobbies</a></li>
+               <li><a ui-sref="skills">Skills</a></li>
             </ul>
          </nav>
 
          <!--Create a viewport-->
-
-
+        <ui-view></ui-view>
+      </div>
       <!--Angular and UI-Router Scripts-->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>

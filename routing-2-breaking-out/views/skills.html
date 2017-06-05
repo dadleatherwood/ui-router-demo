@@ -1,1 +1,13 @@
 <h1>Skills</h1>
+
+<ul>
+  <li ng-repeat="skill in skills track by $index">
+    {{skill.name}}: {{skill.level}}
+  </li>
+</ul>
+
+<form ng-submit="addSkill(newSkill)">
+  <input type="text" placeholder="Name" ng-model="newSkill.name">
+  <input type="text" placeholder="Level" ng-model="newSkill.level">
+  <input type="submit" value="Add Skill" />
+</form>
