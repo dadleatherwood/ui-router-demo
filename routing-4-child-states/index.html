@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Routing 3</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+   
+      <!--Bootstrap your app here-->
+      <div ng-app="routing4App">
+         <nav>
+            <ul>
+               <li>
+                  <a ui-sref="home" ui-sref-active="active">Home</a>
+               </li>
+               <li>
+                  <a ui-sref="parent" ui-sref-active="active">Parent</a>
+               </li>
+               <li>
+                  <a ui-sref="parent.child1" ui-sref-active="active">Child 1</a>
+               </li>
+               <li>
+                  <a ui-sref="parent.child2" ui-sref-active="active">Child 2</a>
+               </li>
+            </ul>
+         </nav>
+         <ui-view></ui-view>
+      </div>
+
+      <!--Angular and UI-Router Scripts-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+
+      <!--Your .js Files-->
+      <script src="app.js"></script>
+
+   </body>
+</html>
