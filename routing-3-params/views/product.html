@@ -1,0 +1,7 @@
+<h1>Product View</h1>
+<div class="product-container">
+   <img ng-src="{{product.imageUrl}}" alt="{{product.name}}">
+   <h2>{{product.price | currency}}</h2>
+   <p>{{product.description}}</p>
+   <button ng-click="addProductToCart(product.id)">Add To Cart</button>
+</div>
