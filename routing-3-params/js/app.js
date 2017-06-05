@@ -12,4 +12,16 @@ angular.module('routing3App', ['ui.router'])
          url: '/',
          templateUrl: 'views/home.html'
       })
+
+      .state('shop', {
+         url: '/shop',
+         templateUrl: 'views/shop.html',
+         controller: 'shopController'
+      })
+
+      .state('product', {
+        url: '/product/:id',
+        templateUrl: 'views/product.html',
+        controller: 'productController'
+      })
 })

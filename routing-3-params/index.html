@@ -7,19 +7,22 @@
       <link href="style.css" rel="stylesheet">
    </head>
    <body>
-   
+
       <div ng-app="routing3App">
          <nav>
             <ul>
                <li>
                   <a ui-sref="home" ui-sref-active="active">Home</a>
                </li>
+               <li>
+                  <a ui-sref="shop" ui-sref-active="active">Shop</a>
+               </li>
             <!--Add navigation to your states here-->
             </ul>
          </nav>
 
          <!--Add your viewport here-->
-
+        <ui-view></ui-view>
       </div>
 
       <!--Angular and UI-Router Scripts-->
